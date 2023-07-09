@@ -1,0 +1,368 @@
+.donation .donation__wrapper .donation__content .donation__card, .button {
+  transition: all 0.2s linear;
+}
+
+.donation .donation__wrapper, .help .help__wrapper .help__list div, .our-friends .our-friends__wrapper .pets-list .pet, .our-friends .our-friends__wrapper, .about .about__wrapper, .not-only__wrapper .not-only__content, .not-only__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .footer__wrapper .footer__contact, .donation .donation__wrapper .donation__content .donation__card, .our-friends .our-friends__wrapper .pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+* {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.section {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+}
+
+.text {
+  font-family: Arial, serif;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.contact__detail {
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  letter-spacing: 0.12rem;
+}
+
+.header__wrapper {
+  padding: 30px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo h1 > a {
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 3.2rem;
+  line-height: 3.52rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  color: #f1cdb3;
+  margin-bottom: 10px;
+}
+.header__logo p > a {
+  font-family: Arial, serif;
+  font-size: 1.3rem;
+  line-height: 1.495rem;
+  font-weight: 400;
+  letter-spacing: 0.13rem;
+  color: #fff;
+}
+
+.navigation {
+  display: none;
+}
+
+.hamburger {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hamburger div {
+  width: 100%;
+  height: 2px;
+  background-color: #f1cdb3;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.button {
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  padding: 15px 45px;
+  color: #292929;
+  display: inline-block;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.button_colored {
+  background-color: #f1cdb3;
+}
+.button_colored:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 10px rgba(250, 0, 0, 0.2);
+}
+
+.button_bordered {
+  background-color: #fafafa;
+  border: 2px solid #f1cdb3;
+  margin-bottom: 30px;
+}
+.button_bordered:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 10px #f1cdb3;
+}
+
+.start {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+}
+
+/*===== Not only =====*/
+.not-only__wrapper .not-only__content {
+  padding-top: 60px;
+  margin-bottom: 105px;
+}
+.not-only__wrapper .not-only__content h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.not-only__wrapper .not-only__content .text {
+  color: #cdcdcd;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.not-only__wrapper .not-only__image {
+  max-width: 260px;
+  align-self: flex-end;
+  margin-bottom: -4px;
+}
+.not-only__wrapper .not-only__image img {
+  width: 100%;
+}
+
+/*===== About page =====*/
+.about {
+  background-color: #fff;
+}
+.about .about__wrapper {
+  padding: 42px 0;
+}
+.about .about__wrapper .about__content {
+  padding: 0 15px;
+}
+.about .about__wrapper .about__content h2 {
+  color: #545454;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.about .about__wrapper .about__content .about__text {
+  color: #4c4c4c;
+  text-align: justify;
+  margin-bottom: 22px;
+}
+.about .about__wrapper .about__image {
+  margin-top: 42px;
+  padding: 0 20px;
+}
+
+/*===== Our friends =====*/
+.our-friends {
+  background-color: #f6f6f6;
+}
+.our-friends .our-friends__wrapper {
+  padding: 42px 0;
+}
+.our-friends .our-friends__wrapper h2 {
+  color: #545454;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.our-friends .our-friends__wrapper .pets-list {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.our-friends .our-friends__wrapper .pets-list .pet {
+  background-color: #fafafa;
+  border-radius: 9px;
+}
+.our-friends .our-friends__wrapper .pets-list .pet .pet-image {
+  margin-bottom: 30px;
+}
+.our-friends .our-friends__wrapper .pets-list .pet .pet-name {
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 2rem;
+  line-height: 2.272rem;
+  font-weight: 400;
+  letter-spacing: 0.12rem;
+  margin-bottom: 30px;
+  color: #545454;
+}
+.our-friends .our-friends__wrapper .pagination {
+  justify-content: center;
+  gap: 80px;
+  padding: 0 15px;
+  margin-bottom: 42px;
+}
+.our-friends .our-friends__wrapper .pagination img {
+  padding: 23px 19px;
+  border-radius: 50%;
+  border: 2px solid #f1cdb3;
+  cursor: pointer;
+}
+
+/*===== Help =====*/
+.help {
+  background-color: #fff;
+}
+.help .help__wrapper {
+  padding: 42px 0;
+}
+.help .help__wrapper h2 {
+  text-align: center;
+  color: #545454;
+  margin-bottom: 42px;
+}
+.help .help__wrapper .help__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+}
+.help .help__wrapper .help__list div {
+  justify-content: center;
+  gap: 20px;
+  color: #545454;
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 1.5rem;
+  line-height: 1.65rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+/*===== Donation =====*/
+.donation {
+  background-color: #f6f6f6;
+}
+.donation .donation__wrapper {
+  padding: 42px 0;
+}
+.donation .donation__wrapper .donation__content {
+  padding: 0 9px;
+  margin-bottom: 42px;
+}
+.donation .donation__wrapper .donation__content h2 {
+  text-align: center;
+  color: #545454;
+  margin-bottom: 42px;
+}
+.donation .donation__wrapper .donation__content .donation__info {
+  color: #545454;
+  margin-bottom: 20px;
+}
+.donation .donation__wrapper .donation__content .donation__card {
+  gap: 15px;
+  padding: 10px 14px;
+  background-color: #f1cdb3;
+  border: none;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.donation .donation__wrapper .donation__content .donation__card .donation__number {
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 1.5rem;
+  line-height: 1.65rem;
+  font-weight: 400;
+  letter-spacing: 0.07rem;
+  color: #545454;
+}
+.donation .donation__wrapper .donation__content .donation__text {
+  font-family: Arial, serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-style: italic;
+  text-align: justify;
+  color: #b2b2b2;
+}
+.donation .donation__wrapper .donation__image {
+  padding: 0 20px;
+}
+.donation .donation__wrapper .donation__image img {
+  width: 100%;
+}
+
+/*===== Footer =====*/
+.footer {
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+.footer .footer__wrapper {
+  padding-top: 30px;
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-weight: normal;
+  letter-spacing: 0.05rem;
+  color: #f1cdb3;
+}
+.footer .footer__wrapper .footer__contact {
+  justify-content: center;
+  gap: 19px;
+  margin-bottom: 40px;
+}
+.footer .footer__wrapper .footer__contacts {
+  padding: 0 24px;
+  margin-bottom: 40px;
+}
+.footer .footer__wrapper .footer__contacts .footer__title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.footer .footer__wrapper .footer__addresses h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.footer .footer__wrapper .footer__addresses .footer__contact {
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */

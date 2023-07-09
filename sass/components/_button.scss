@@ -1,0 +1,35 @@
+.button {
+    @include font($font-primary, 1.7rem, 2.2rem, normal, 0.1rem);
+    padding: 15px 45px;
+    color: $color-dark-3xl;
+    display: inline-block;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    @extend %transition; 
+}
+
+.button_colored {
+    background-color: $color-primary;
+    cursor: default;
+    @media screen and (min-width:1280px){
+        &:hover {
+            cursor: pointer;
+            background-color: $color-hover;
+        }
+    }
+}
+
+.button_bordered {
+    background-color: $color-light-s;
+    border: 2px solid $color-primary;
+    margin-bottom: 30px;
+    cursor: default;
+    @media screen and (min-width:1280px){
+        &:hover {
+            cursor: pointer;
+            background-color: $color-hover;
+            border: 2px solid $color-hover;
+        }
+    }
+}

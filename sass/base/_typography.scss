@@ -1,0 +1,24 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li { list-style: none }
+
+// img { width: 100% }
+
+h2 {
+    @include font($font-primary, 2.5rem, 3.25rem, 400, 0.1rem);
+    
+    @media screen and (min-width: 768px) {
+        @include font($font-primary, 3.5rem, 4.55rem, 400, 0.2rem)
+    }
+}
+
+.text {
+    @include font($font-secondary, 1.5rem, 2.4rem, 400, 0);
+}   
+
+.contact__detail {
+    @include font($font-primary, 2rem, 2.3rem, 400, 0.12rem)
+}

@@ -1,0 +1,46 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+* {
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        min-width: 768px;
+    }
+
+    @media (min-width: 1280px) {
+        min-width: 1280px;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    min-width: 300px;
+    margin: 0 auto;
+    
+    @media (min-width: 768px) {
+        min-width: 708px;
+        width: 92.2%;
+    }
+
+    @media (min-width: 1280px) {
+        max-width: 1200px;
+        width: 100%;
+    }
+}
+
+.disabled-body {
+    background-color: #999; 
+    // opacity: 0.5;
+}

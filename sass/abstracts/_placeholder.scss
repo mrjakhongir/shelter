@@ -1,0 +1,21 @@
+// Transition
+
+%transition {
+    transition: all 0.2s linear;
+}
+
+// Display flex
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

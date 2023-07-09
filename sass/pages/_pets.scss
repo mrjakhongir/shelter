@@ -1,0 +1,145 @@
+/*===== Header =====*/
+
+.header {
+    background-color: $color-light;
+    padding-bottom: 30px;
+}
+.header__logo_pets {
+    color: $color-secondary;
+}
+
+.sub-header__logo_pets {
+    color: $color-dark-3xl;
+}
+
+.hamburger__pets {
+    .hamburger-line {
+        background-color: #000;
+    }
+    .rotated-hamburger{
+        background-color: red;
+    }
+}
+
+.nav__link_pets {
+    color: $color-dark-s;
+    @media screen and (min-width: 768px) {
+        color: $color-secondary;
+    }
+    @media screen and (min-width: 768px) {
+        color: $color-secondary;
+        &:hover {
+            color: $color-dark-3xl;
+            border-bottom: 3px solid $color-primary;
+        }
+    }
+}
+.pets-link_active {
+    color: $color-light-s;
+    border-bottom: 3px solid $color-primary;
+    @media screen and (min-width: 768px){
+        color: $color-dark-3xl;
+    }
+}
+
+
+/*===== Our Friends =====*/
+
+.our-friends__wrapper_pets {
+    padding: 42px 0;
+    .our-friends__title_pets {
+        margin-bottom: 38px;
+    }
+    .pets-list_pets {
+        display: grid;
+        row-gap: 30px;
+        margin-bottom: 42px;
+
+        .pet-image1 {
+            margin-bottom: 32px;
+        }
+
+        .pet-desktop,
+        .pet-tablet {
+            display: none;
+        }
+    }
+    .pets-list_pets1,
+    .pets-list_pets2{
+        display: none
+    }
+
+    .pets-pagination {
+        margin-top: 0;
+        gap: 10px;
+        .arrow {
+            border: 2px solid $color-primary;
+        }
+        .current-page {
+            background-color: $color-primary;
+        }
+        .inactive {
+            border: 2px solid $color-dark-s;
+            opacity: 0.2;
+        }
+        .first-arrow,
+        .prev-arrow_pets {
+            transform: rotate(180deg);
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        padding: 80px 64px 76px;
+        .our-friends__title_pets {
+            margin-bottom: 30px;
+        }
+        .pets-list_pets,
+        .pets-list_pets2 {
+            display: none
+        }
+        .pets-list_pets1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 30px;  
+            column-gap: 40px;
+            margin-bottom: 37px;
+        }
+        .pets-pagination {
+            gap: 20px;
+        }
+    }
+
+    @media screen and (min-width: 1280px){
+        padding: 80px 0 100px;
+        .our-friends__title_pets {
+            margin-bottom: 55px;
+        }
+        .pets-list_pets,
+        .pets-list_pets1 {
+            display: none
+        }
+        .pets-list_pets2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-bottom: 60px;
+            row-gap: 30px;  
+            column-gap: 40px;
+        }
+        .pets-pagination {
+            .arrow:hover {
+                background-color: $color-hover;
+                border-color: $color-hover;
+                cursor: pointer;
+            }
+            .inactive:hover {
+                background-color: inherit;
+                border: 2px solid $color-dark-s;
+                cursor: text;
+            }
+            .current-page:hover {
+                background-color: $color-primary;
+                border: 2px solid $color-primary;
+            }
+        }
+    }
+}
