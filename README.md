@@ -1,6 +1,6 @@
 # shelter
 
-In this project I build adaptive website. That was useful to improve skills below:
+In this project I build adaptive website. That was helpful to improve skills below:
   - first of all I used **Sass** preprocessor;
   - since its adaptive layout I used flexbox and grid actively;
   - add, remove and toggling classLists;
